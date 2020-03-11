@@ -112,6 +112,32 @@ nav ul{
         width: 98%;
         height: 131%;
     }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 98%;
+        height: 131%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .col-sm:hover .overlay {
+        opacity: 1;
+      }
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
 }
 #myBtn {
     
@@ -122,8 +148,8 @@ nav ul{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
- 
+    background-color: white;
+    color:transparentize($color: #000000, $amount: 0);
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
