@@ -81,13 +81,13 @@ nav ul{
         float: left;
     };
     li a{
-        text-shadow: 2px 2px black;    
-    font-size: 25px;
-    display: block;
-    color: #1E725F;
-    text-align: center;
-    padding: 15px 214px;
-    text-decoration: none;
+        text-shadow: 2px 2px black;
+        font-size: 27px;
+        display: block;
+        color: #1E725F;
+        text-align: center;
+        padding: 20px 135px;
+        text-decoration: none;
   
     }
     li a:hover{
@@ -103,9 +103,11 @@ nav ul{
         padding: 40px;
         h1{
             color: white;
+            font-size: 4rem;
         }
         p{
             color: white;
+            font-size: 19px;
         }
     }
     .col-sm img{
@@ -139,6 +141,78 @@ nav ul{
         text-align: center;
       }
 }
+
+//container2/////////
+
+.container2{
+    background-image: url('../img/con2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 63vh;
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        text-shadow: 2px 2px black;
+    }
+    p{
+        font-size: 28px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    color: white;
+    text-align: center;
+    }
+    body {
+        align-items: center;
+        background: #e3e3e3;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+      }
+    
+      @mixin white-gradient {
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      }
+    
+      $animationSpeed: 20s;
+    
+      // Animation
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-250px * 5));
+        }
+      }
+    
+      // Styling
+      .slider {
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        height: 274px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 91%;
+    
+        .slide-track {
+          animation: scroll $animationSpeed linear infinite;
+          display: flex;
+          width: calc(250px * 14);
+          margin-top: 39px;
+        }
+    
+        .slide {
+          height: 100px;
+          width: 250px;
+          margin-left: 116px;
+        }
+      }
+    }
+    
+
 #myBtn {
     
     position: fixed;
