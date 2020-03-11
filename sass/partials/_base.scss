@@ -104,6 +104,8 @@ nav ul{
         h1{
             color: white;
             font-size: 4rem;
+            border-bottom: 5px solid #1E725F;
+            width: 60px;
         }
         p{
             color: white;
@@ -149,7 +151,7 @@ nav ul{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 63vh;
+    height: 79vh;
     h1{
         color: white;
         text-align: center;
@@ -211,6 +213,77 @@ nav ul{
         }
       }
     }
+    //container 3/////
+    .container3{
+        background-color:#0C0D0F ;
+        height: 72vh;
+        .con3{
+            display: inline-flex;
+        }
+        h1{
+            color: white;
+            margin-left: 4%;
+            font-size: 4rem;
+            padding-top: 23px;
+            border-bottom: 5px solid #1E725F;
+            width: 60px;
+
+        }
+        img{
+            width: 52px;
+    height: 42px;
+        }
+        p{
+            margin: 1%;
+            /* z-index: 2; */
+            color: white;
+            font-size: 17px;
+        }
+        .video{
+            margin-top: -5;
+            background: rgb(34, 71, 63);
+            height: 75%;
+            padding: 19px;
+            width: 52%;
+            opacity: 0.5;
+        }
+        .video:hover{
+            opacity: 1.0;
+        }
+        
+    }
+    .container4{
+        background-image: url("../img/con4.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 65vh;
+        h1{
+            font-size: 4rem;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px black
+        }
+        .con4-text{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 3%;
+            grid-gap: 19%;
+            background: rgba(0, 0, 0, 0.7);
+            margin: 4%;
+            height: 60%;
+            width: 91%;
+            h2{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+            img{
+                width: 42%;
+            }
+        }
+        }
     
 
 #myBtn {
