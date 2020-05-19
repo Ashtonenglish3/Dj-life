@@ -239,13 +239,23 @@ nav ul{
             color: white;
             font-size: 17px;
         }
-        .video{
-            margin-top: -5;
-            background: rgb(34, 71, 63);
-            height: 75%;
-            padding: 19px;
-            width: 52%;
-            opacity: 0.5;
+        .vid-grid{
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-gap: 62px;
+          margin: 13%;
+          margin-top: 13px;
+        }
+        .video-gradient{
+          background: #22473f;
+          height: 75%;
+          width: 61%;
+          /* padding: 19px; */
+          opacity: 0.5;
+        }
+        video{
+          width: 393px;
+          height: 360;
         }
         .video:hover{
             opacity: 1.0;
